@@ -1,9 +1,12 @@
-import express from "express";
-import userRouter from "./src/routes/user.router.js";
+import app from "./src/server/server.js";
 
-const app = express();
+const rawPort = process.env.PORT;
+const PORT = rawPort ? Number(rawPort) : 7777;
 
-app.use(express.json());
-app.use("/api/users", userRouter);
+if (Number.isNaN(PORT)) {
+    console.error("PORT is not a number");
+}
 
-export default app;
+app.listen(PORT, () => {
+    console.log(`Server is running on PORT ${PORT}`);
+});

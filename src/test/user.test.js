@@ -32,7 +32,7 @@ describe("GET /api/users con moks de `faker`", () => {
         }));
 
         //import dinamico: asegura que la app use el modulo mockeado
-        const app = (await import("../../app.js")).default;
+        const app = (await import("../server/server.js")).default;
         const res = await request(app).get("/api/users");
 
         expect(res.statusCode).toBe(200);
@@ -60,7 +60,7 @@ describe("GET /api/users con moks de `faker`", () => {
                 throw new Error("Internal Server Error");
             }
         }));
-        const app = (await import("../../app.js")).default;
+        const app = (await import("../server/server.js")).default;
         const res = await request(app).get("/api/users");
 
         expect(res.statusCode).toBe(500);
