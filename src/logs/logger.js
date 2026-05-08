@@ -10,7 +10,7 @@ const customLevels = {
         debug: 5,
     },
     colors: {
-        fatal: 'redGB',
+        fatal: 'redBG',
         error: 'red',
         warn: 'yellow',
         info: 'green',
@@ -36,13 +36,13 @@ const logger = winston.createLogger({
     
     transports: [
         new winston.transports.Console(),
-        new winston.transports.File({ filename: "errors/errors.log", level: "error" }),
-        new winston.transports.File({ filename: "errors/fatals.log", level: "fatal" }),
-        new winston.transports.File({ filename: "errors/warnings.log", level: "warn" }),
-        new winston.transports.File({ filename: "errors/info.log", level: "info" }),
-        new winston.transports.File({ filename: "errors/http.log", level: "http" }),
-        new winston.transports.File({ filename: "errors/debug.log", level: "debug" }),
-        new winston.transports.File({ filename: "errors/all.log" }),
+        new winston.transports.File({ filename: "src/logs/errors/errors.log", level: "error" }),
+        new winston.transports.File({ filename: "src/logs/errors/fatals.log", level: "fatal" }),
+        new winston.transports.File({ filename: "src/logs/errors/warnings.log", level: "warn" }),
+        new winston.transports.File({ filename: "src/logs/errors/info.log", level: "info" }),
+        new winston.transports.File({ filename: "src/logs/errors/http.log", level: "http" }),
+        new winston.transports.File({ filename: "src/logs/errors/debug.log", level: "debug" }),
+        new winston.transports.File({ filename: "src/logs/errors/all.log" }),
     ]
 });
 

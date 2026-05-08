@@ -21,7 +21,8 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "load:test": "artillery run src/test/artillery/test.yml"
   },
   "dependencies": {
     "@faker-js/faker": "^10.4.0",

@@ -1,0 +1,13 @@
+config:
+  target: "http://localhost:7777"  #url de la app
+  phases:
+    #artillery enviara trafico constante a la app
+    - duration: 60
+      #la duracion de la fase es de 60 segundos
+      #arrivalRate indica cuantos request por segundo se enviaran
+      arrivalRate: 10
+
+scenarios:
+  - flow:
+      - get:
+          url: "/test"
