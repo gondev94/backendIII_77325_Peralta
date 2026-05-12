@@ -26,17 +26,17 @@
   },
   "dependencies": {
     "@faker-js/faker": "^10.4.0",
+    "artillery": "2.0.31",
     "bcryptjs": "3.0.3",
     "commander": "14.0.3",
     "dotenv": "17.4.2",
     "express": "5.2.1",
+    "express-validator": "^7.3.2",
+    "jest": "30.3.0",
     "jsonwebtoken": "9.0.3",
+    "supertest": "7.2.2",
     "swagger-jsdoc": "6.2.8",
     "swagger-ui-express": "5.0.1",
-    "jest": "30.3.0",
-    "supertest": "7.2.2",
-    "artillery": "2.0.31",
     "winston": "3.19.0"
-
   }
 }

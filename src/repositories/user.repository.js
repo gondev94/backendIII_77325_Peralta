@@ -1,9 +1,9 @@
-import { userRepository } from "../models/user.model.js";
+import { User } from "../models/user.model.js";
 import { randomUUID } from "crypto";
 
 const users = [];
 
-export class userRepository{
+export class UserRepository {
     findAllUsers() {
         return users
     }
@@ -21,7 +21,7 @@ export class userRepository{
     }
 
     createUser(email, password, username) {
-        const newUser = new userRepository({
+        const newUser = new User({
             id: randomUUID(),
             email,
             password,

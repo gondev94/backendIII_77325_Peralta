@@ -1,13 +1,13 @@
-import { userRepository } from "../repositories/user.repository.js";
+import { UserRepository } from "../repositories/user.repository.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { error } from "winston";
+
 
 const SALT_ROUND = 10;
 
 export class userService {
     constructor() {
-        this.userRepository = new userRepository();
+        this.userRepository = new UserRepository();
     }
 
     getAllUsers() {

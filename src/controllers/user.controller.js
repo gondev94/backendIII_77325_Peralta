@@ -1,7 +1,7 @@
 import { body, validationResult } from "express-validator";
-import { userService } from "../services/user.service.js";
+import { userService as UserService } from "../services/user.service.js";
 
-const userService = new userService();
+const userService = new UserService();
 
 export class userController {
     
