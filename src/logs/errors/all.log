@@ -1200,3 +1200,25 @@
 [2026-05-08T17:48:33.801Z] [36mhttp[39m: [36mGET | /test[39m
 [2026-05-08T17:48:33.864Z] [36mhttp[39m: [36mRequest received: GET | URL: /test[39m
 [2026-05-08T17:48:33.864Z] [36mhttp[39m: [36mGET | /test[39m
+[2026-05-11T21:53:16.675Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-11T21:53:22.662Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-11T22:04:18.201Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-11T22:04:30.203Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-11T22:14:36.740Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-12T09:56:02.310Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-12T10:06:38.729Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-12T10:06:40.650Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:06:40.732Z] [36mhttp[39m: [36mRequest received: GET | URL: /favicon.ico[39m
+[2026-05-12T10:07:46.856Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:08:14.283Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:10:35.570Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:47.535Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:56.014Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:56.590Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:57.032Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:57.319Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:57.519Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:57.705Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:57.879Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:58.311Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-12T10:15:58.942Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m

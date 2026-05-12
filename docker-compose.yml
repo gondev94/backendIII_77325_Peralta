@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: 77325_peralta
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 77325_peralta:latest
+    ports:
+      - "7777:7777"
+    environment:
+      NODE_ENV: production
+      PORT: 7777
+      LOG_LEVEL: info
+    volumes:
+      - ./src/logs:/src/logs
+    restart: unless-stopped

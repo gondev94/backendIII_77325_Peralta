@@ -4,16 +4,20 @@ import { randomUUID } from "crypto";
 const users = [];
 
 export class userRepository{
-    getAllUsers() {
+    findAllUsers() {
         return users
     }
     
-    getUserById(id) {
+    findUserById(id) {
         return users.find(user => user.id === id);
     }
 
-    getUserByEmail(email) {
+    findUserByEmail(email) {
         return users.find(user => user.email === email);
+    }
+
+    findUserByUsername(username) {
+        return users.find(user => user.username === username);
     }
 
     createUser(email, password, username) {
@@ -47,5 +51,6 @@ export class userRepository{
         return user;
     }
 
-    
+
 }
+
