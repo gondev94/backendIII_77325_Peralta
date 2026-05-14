@@ -1228,3 +1228,4 @@
 [2026-05-12T20:15:02.784Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
 [2026-05-12T20:15:09.833Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
 [2026-05-12T21:00:43.304Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-14T21:53:31.076Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
