@@ -1,5 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
+import swaggerJSDoc from "swagger-jsdoc";
+import swaggerUi from "swagger-ui-express";
 import userRouter from "../routes/user.router.js";
 import logger from "../logs/logger.js";
 import logsRouter from "../routes/logs.router.js";
