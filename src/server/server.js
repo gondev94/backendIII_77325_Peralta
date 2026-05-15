@@ -97,7 +97,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use("/api", userRouter);
+app.use("/api/users", userRouter);
 
 app.use("/logs", logsRouter);
 
