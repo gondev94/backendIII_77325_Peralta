@@ -73,6 +73,22 @@ export class userService {
         return { id: user.id, email: user.email, username: user.username };
     }
 
+    getByUsername(username) {
+        const user = this.userRepository.findUserByUsername(username);
+        if (!user) {
+            throw new Error("User not found");
+        }
+        return { id: user.id, email: user.email, username: user.username };
+    }
+
+    getUserByEmail(email) {
+        const user = this.userRepository.findUserByEmail(email);
+        if (!user) {
+            throw new Error("User not found");
+        }
+        return { id: user.id, email: user.email, username: user.username };
+    }
+    
     loginUser(email, password) {
         const user = this.userRepository.findUserByEmail(email);
         if (!user) {

@@ -22,7 +22,27 @@ export class userController {
             const user = userService.getUserById(id);
             res.status(200).json(user);
         } catch (error) {
-            res.status(500).json({ error: error.message })
+            res.status(404).json({ error: error.message })
+        }
+    }
+    
+    static getUserByUsername(req, res) {
+        try {
+            const { username } = req.params;
+            const user = userService.getByUsername(username);
+            res.status(200).json(user)
+        } catch (error) {
+            res.status(404).json({ error: error.message })
+        }
+    }
+
+    static getUserByEmail(req, res) {
+        try {
+            const { email } = req.params;
+            const user = userService.getUserByEmail(email);
+            res.status(200).json(user)
+        } catch (error) {
+            res.status(404).json({ error: error.message })
         }
     }
 
@@ -37,7 +57,7 @@ export class userController {
             res.status(201).json(user);
 
         } catch (error) {
-            res.status(500).json({ error: error.message })
+            res.status(400).json({ error: error.message })
         }
     
     }
@@ -48,7 +68,7 @@ export class userController {
             const user = userService.deleteUser(id);
             res.status(200).json(user);
         } catch (error) {
-            res.status(500).json({ error: error.message });
+            res.status(403).json({ error: error.message });
         }
     }
 
@@ -59,7 +79,7 @@ export class userController {
             const user = userService.updateUser(id, email, password, username);
             res.status(200).json(user);
         } catch (error) {
-            res.status(500).json({ error: error.message })
+            res.status(403).json({ error: error.message })
         }
     }    
     static login (req, res) {
@@ -68,7 +88,7 @@ export class userController {
             const { token, user } = userService.loginUser(email, password);
             res.status(200).json({ token, user })
         } catch (error) {
-            res.status(500).json({ error: error.message })
+            res.status(401).json({ error: error.message })
         }
     }
     

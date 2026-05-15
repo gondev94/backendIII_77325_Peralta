@@ -80,10 +80,7 @@ const swaggerOptions = {
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
-app.use(
-    "/api-docs",
-    swaggerUi.serve,
-    swaggerUi.setup(swaggerSpec, {
+app.use("/api-docs",swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
         swaggerOptions: {
             docExpansion: "none",
             persistAuthorization: false,
