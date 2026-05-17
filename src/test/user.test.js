@@ -1,10 +1,8 @@
-import { jest } from "@jest/globals";
-import request from "supertest";
 import { expect } from "chai";
-
-process.env.JWT_SECRET = "test-secret-key-for-testing";
-
+import dotenv from "dotenv";
 import { userService } from "../services/user.service.js";
+
+dotenv.config();
 
 
 const JWT_SECRET = process.env.JWT_SECRET;
@@ -33,7 +31,7 @@ describe("User Service - Unit", () => {
             userServiceInstance.registerUser(
                 "gonzalo.peralta.developer@mail.com",
                 "123456789",
-                "gondev"
+                "otroUsername"
             );
         }).to.throw("Email already in use");
     });
@@ -69,7 +67,7 @@ describe("User Service - Unit", () => {
         }).to.throw("Invalid Credentials");
     });
 
-    it("throw error when the mail is incorrect", () => {
+    it("throw error when the email is incorrect", () => {
         expect(() => {
             userServiceInstance.loginUser(
                 "gonzalo.peralta.developer@nuevomail.com",
