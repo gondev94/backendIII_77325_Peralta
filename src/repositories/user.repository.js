@@ -20,7 +20,7 @@ export class UserRepository {
         return users.find(user => user.username === username);
     }
 
-    createUser(email, password, username) {
+    createUser({ email, password, username }) {
         const newUser = new User({
             id: randomUUID(),
             email,
