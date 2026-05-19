@@ -278,7 +278,40 @@ router.put("/:id", authenticateToken, userController.updateUser);
  */
 
 router.post("/create", userController.validateCreate, userController.create);
-
+/**
+ * @swagger
+ * /api/users/create:
+ *   post:
+ *     summary: Crear un nuevo usuario
+ *     description: Registra un nuevo usuario en el sistema
+ *     tags: [Users]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *               - username
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               password:
+ *                 type: string
+ *                 minLength: 6
+ *               username:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: Usuario creado exitosamente
+ *       400:
+ *         description: Datos de entrada inválidos
+ *       500:
+ *         description: Error del servidor
+ */
 
 
 
