@@ -212,6 +212,34 @@ router.delete("/:id", authenticateToken, userController.deleteUser);
 /**
  * @swagger
  * /api/users/{id}:
+ *   delete:
+ *     summary: Eliminar Usuario
+ *     description: Elimina un usuario por su ID
+ *     tags: [Users]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID del usuario a eliminar
+ *     responses:
+ *       200:
+ *         description: Usuario eliminado exitosamente
+ *       401:
+ *         description: No autorizado
+ *       500:
+ *         description: Usuario no encontrado o error del servidor
+ */
+
+
+router.put("/:id", authenticateToken, userController.updateUser);
+
+/**
+ * @swagger
+ * /api/users/{id}:
  *   put:
  *     summary: Actualizar usuario
  *     description: Actualiza los datos de un usuario existente
@@ -248,9 +276,8 @@ router.delete("/:id", authenticateToken, userController.deleteUser);
  *       500:
  *         description: Usuario no encontrado o error del servidor
  */
-router.put("/:id", authenticateToken, userController.updateUser);
 
-
+router.post("/create", userController.validateCreate, userController.create);
 
 
 

@@ -19,7 +19,7 @@ COPY . .
 
 # creamos la carpeta de logs
 
-RUN mkdir -p src/logs/errors
+RUN mkdir -p src/logs/errors 
 
 # indicamos el puerto en el que escucha la app dentro del contenedor
 

@@ -2451,3 +2451,10 @@
 [2026-05-17T22:36:38.701Z] [36mhttp[39m: [36mRequest received: GET | URL: /test[39m
 [2026-05-17T22:36:38.764Z] [36mhttp[39m: [36mRequest received: GET | URL: /test[39m
 [2026-05-17T22:36:38.825Z] [36mhttp[39m: [36mRequest received: GET | URL: /test[39m
+[2026-05-19T22:46:33.951Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-19T22:46:36.828Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
+[2026-05-19T22:47:04.792Z] [36mhttp[39m: [36mRequest received: POST | URL: /api/users/register[39m
+[2026-05-19T22:47:13.891Z] [36mhttp[39m: [36mRequest received: POST | URL: /api/users/create[39m
+[2026-05-19T22:48:12.926Z] [32minfo[39m: [32mServer is running on PORT 7777[39m
+[2026-05-19T22:48:18.573Z] [36mhttp[39m: [36mRequest received: POST | URL: /api/users/create[39m
+[2026-05-19T22:48:28.178Z] [36mhttp[39m: [36mRequest received: GET | URL: /api/users[39m
