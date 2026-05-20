@@ -6,16 +6,17 @@ API REST desarrollada con Node.js y Express para el curso de Backend III de Code
 
 - **Autor:** Gonzalo Ezequiel Peralta
 - **Curso:** Backend III - Coderhouse (Comisión 77325)
+- **Profesor:** A
 - **Licencia:** MIT
 
 ---
 
 ## Enlaces
 
-| Recurso | URL |
-|---------|-----|
-| **Repositorio GitHub** | [https://github.com/gondev94/backendIII_77325_Peralta](https://github.com/gondev94/backendIII_77325_Peralta) |
-| **Imagen DockerHub** | [https://hub.docker.com/repository/docker/gonzaloperalta94/77325-peralta-coderhouse](https://hub.docker.com/repository/docker/gonzaloperalta94/77325-peralta-coderhouse) |
+| Recurso                | URL                                                                                                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Repositorio GitHub** | [https://github.com/gondev94/backendIII_77325_Peralta](https://github.com/gondev94/backendIII_77325_Peralta)                                                             |
+| **Imagen DockerHub**   | [https://hub.docker.com/repository/docker/gonzaloperalta94/77325-peralta-coderhouse](https://hub.docker.com/repository/docker/gonzaloperalta94/77325-peralta-coderhouse) |
 
 ---
 
@@ -221,21 +222,21 @@ La documentación completa de la API está disponible en Swagger:
 
 ## Variables de Entorno
 
-| Variable | Descripción | Valor por defecto |
-|----------|-------------|-------------------|
-| `PORT` | Puerto de la aplicación | 7777 |
-| `NODE_ENV` | Entorno de ejecución | development |
+| Variable   | Descripción             | Valor por defecto |
+| ---------- | ----------------------- | ----------------- |
+| `PORT`     | Puerto de la aplicación | 7777              |
+| `NODE_ENV` | Entorno de ejecución    | development       |
 
 ---
 
 ## Comandos Disponibles
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm start` | Inicia la aplicación en producción |
-| `npm run dev` | Inicia la aplicación en modo desarrollo (nodemon) |
-| `npm test` | Ejecuta los tests con Jest |
-| `npm run load:test` | Ejecuta tests de carga con Artillery |
+| Comando             | Descripción                                       |
+| ------------------- | ------------------------------------------------- |
+| `npm start`         | Inicia la aplicación en producción                |
+| `npm run dev`       | Inicia la aplicación en modo desarrollo (nodemon) |
+| `npm test`          | Ejecuta los tests con Jest                        |
+| `npm run load:test` | Ejecuta tests de carga con Artillery              |
 
 ---
 
