@@ -2,8 +2,6 @@ import { Router } from "express";
 import { userController } from "../controllers/user.controller.js";
 import { authenticateToken } from "../middleware/user.middleware.js";
 
-
-
 const router = Router();
 
 /**
@@ -234,7 +232,6 @@ router.delete("/:id", authenticateToken, userController.deleteUser);
  *         description: Usuario no encontrado o error del servidor
  */
 
-
 router.put("/:id", authenticateToken, userController.updateUser);
 
 /**
@@ -312,7 +309,5 @@ router.post("/create", userController.validateCreate, userController.create);
  *       500:
  *         description: Error del servidor
  */
-
-
 
 export default router;
